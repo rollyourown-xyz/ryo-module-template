@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Default software versions
+# Add software package versions here, for example mariadb -- NOTE: for nextcloud, mariadb currently needs to be fixed to 10.5
+mariadb_version='10.5.13'
+
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 # Add additional help for software package versions defined below
@@ -26,10 +30,6 @@ errorMessage()
    exit 1
 }
 
-# Default software versions
-# Add software package versions here, for example mariadb
-mariadb_version='10.5.13'
-
 # Add additional options for software package versions defined above
 # Option "-m mariadb_version" as an example
 while getopts n:v:m:h flag
@@ -49,8 +49,11 @@ then
 fi
 
 
+# Get Module ID from configuration file
+MODULE_ID="$(yq eval '.module_id' "$SCRIPT_DIR"/configuration/configuration.yml)"
+
 # Module-specific image builds here..., for example
-# echo "Building images for <MODULE_ID> module on "$hostname""
+# echo "Building images for "$MODULE_ID" module on "$hostname""
 # echo "Building COMPONENT image"
 # echo "Executing command: packer build -var \"host_id="$hostname"\" -var \"version="$version"\" -var \"mariadb_version="$mariadb_version"\" "$SCRIPT_DIR"/image-build/TEMPLATE.pkr.hcl"
 # echo ""
