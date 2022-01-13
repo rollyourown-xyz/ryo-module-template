@@ -31,7 +31,7 @@
 #     type = "disk"
     
 #     properties = {
-#       source   = join("", [ "/var/containers/", local.module_id, "<SUBDIRECTORY>" ])
+#       source   = join("", [ "/var/containers/", local.module_id, "/<COMPONENT>/<SUBDIRECTORY>" ])
 #       path     = "<PATH>"
 #       readonly = "false"
 #       shift    = "true"

@@ -14,11 +14,19 @@
     state: directory
     mode: '0755'
 
-## Create directory for module ABC container
+
+- name: Create a directory to mount in <COMPONENT> container
+  file:
+    path: "/var/containers/{{ module_id }}/<COMPONENT>"
+    state: directory
+    mode: '0755'
+
+
+## Create directory for module ABC
 
 # Example
 # - name: Create a directory for <ABC> container mounts
 #   file:
-#     path: "/var/containers/{{ module_id }}/<ABC>"
+#     path: "/var/containers/{{ module_id }}/<COMPONENT>/<ABC>"
 #     state: directory
 #     mode: '0755'
