@@ -37,22 +37,8 @@ then
 fi
 
 # Get Module ID from configuration file
-MODULE_ID="$(yq eval '.module_id' "$SCRIPT_DIR"/configuration/configuration.yml)"
+MODULE_ID="$(yq eval '.module_id' "$SCRIPT_DIR"/../configuration/configuration.yml)"
 
-
-# Stop module containers (only if there is persistent storage to back up)
-#########################################################################
-
-# echo ""
-# echo "Stop "$MODULE_ID" containers on "$hostname""
-# lxc stop "$hostname":<COMPONENT>
-
-# Back up module container persistent storage (only if there is persistent storage to back up)
-##############################################################################################
-
-# echo ""
-# echo "Backing up module container persistent storage on "$hostname""
-# ansible-playbook -i "$SCRIPT_DIR"/../ryo-host/configuration/inventory_"$hostname" "$SCRIPT_DIR"/backup-restore/backup-container-storage.yml --extra-vars "host_id="$hostname""
 
 # Start module containers (only if there is persistent storage to back up)
 ##########################################################################
@@ -60,10 +46,3 @@ MODULE_ID="$(yq eval '.module_id' "$SCRIPT_DIR"/configuration/configuration.yml)
 # echo ""
 # echo "Start "$MODULE_ID" containers on "$hostname""
 # lxc start "$hostname":<COMPONENT>
-
-
-# Info: no persistent storage (if there is NO persistent storage to back up)
-############################################################################
-
-# echo ""
-# echo ""$MODULE_ID" on "$hostname" has no persistent storage to back up"
