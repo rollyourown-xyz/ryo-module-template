@@ -40,8 +40,8 @@ fi
 MODULE_ID="$(yq eval '.module_id' "$SCRIPT_DIR"/../configuration/configuration.yml)"
 
 
-# Start module containers (only if there is persistent storage to back up)
-##########################################################################
+# Start module containers
+#########################
 
 # echo ""
 # echo "Start "$MODULE_ID" containers on "$hostname""

@@ -40,8 +40,8 @@ fi
 MODULE_ID="$(yq eval '.module_id' "$SCRIPT_DIR"/../configuration/configuration.yml)"
 
 
-# Stop module containers (only if there is persistent storage to back up)
-#########################################################################
+# Stop module containers
+########################
 
 # echo ""
 # echo "Stop "$MODULE_ID" containers on "$hostname""
