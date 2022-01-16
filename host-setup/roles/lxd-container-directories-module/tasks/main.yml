@@ -15,6 +15,21 @@
     mode: '0755'
 
 
+## Copy README into top-level directory for module containers
+
+- name: Copy README
+  copy:
+    mode: 0644
+    owner: root
+    group: root
+    dest: "/var/containers/{{ module_id }}/README"
+    src: README
+    force: yes
+
+
+
+## Create directory for <COMPONENT>
+
 - name: Create a directory to mount in <COMPONENT> container
   file:
     path: "/var/containers/{{ module_id }}/<COMPONENT>"
@@ -22,7 +37,7 @@
     mode: '0755'
 
 
-## Create directory for module ABC
+## Create directory for <COMPONENT> ABC
 
 # Example
 # - name: Create a directory for <ABC> container mounts
