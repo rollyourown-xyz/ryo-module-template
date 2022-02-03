@@ -48,7 +48,7 @@ MODULE_ID="$(yq eval '.module_id' "$SCRIPT_DIR"/../configuration/configuration.y
 # lxc delete --force "$hostname":<COMPONENT>
 
 # echo "...deleting module container persistent storage"
-# ansible-playbook -i "$SCRIPT_DIR"/../../ryo-host/configuration/inventory_"$hostname" "$SCRIPT_DIR"/../backup-restore/delete-module-persistent-storage.yml --extra-vars "project_id="$PROJECT_ID" host_id="$hostname""
+# ansible-playbook -i "$SCRIPT_DIR"/../../ryo-host/configuration/inventory_"$hostname" "$SCRIPT_DIR"/../backup-restore/delete-module-persistent-storage.yml --extra-vars "module_id="$MODULE_ID" host_id="$hostname""
 # echo ""
 
 # echo "Module container deleted"
