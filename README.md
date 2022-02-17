@@ -27,7 +27,7 @@ Deploy <MODULE_PURPOSE> using Ansible, Packer and Terraform.
 
 ## Module Summary
 
-This module uses [Ansible](https://www.ansible.com/), [Packer](https://www.packer.io/) and [Terraform](https://www.terraform.io/) to deploy...
+This module uses [Ansible](https://www.ansible.com/), [Packer](https://www.packer.io/) and [Terraform](https://www.terraform.io/) to deploy ...,  as a module for other [rollyourown.xyz projects](https://rollyourown.xyz/rollyourown/projects/).
 
 _A short summary of the purpose of the module._
 
