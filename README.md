@@ -23,7 +23,7 @@ This template README can be used for the new module by deleting this part, chang
 
 ---
 
-Deploy <MODULE_PURPOSE> using Ansible, Packer and Terraform.
+This is a [rollyourown.xyz module](https://rollyourown.xyz/rollyourown/project_modules/) to deploy <MODULE_PURPOSE> using Ansible, Packer and Terraform.
 
 ## Module Summary
 
