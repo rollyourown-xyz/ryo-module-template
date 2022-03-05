@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2022 Wilfred Nicoll <xyzroller@rollyourown.xyz>
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 ## TERRAFORM FILE EXAMPLES FOR DEPLOYMENT OF MODULE COMPONENTS
 
 # Deployment of <COMPONENT_NAME> using a dynamic IP address and a plain cloud-init file
