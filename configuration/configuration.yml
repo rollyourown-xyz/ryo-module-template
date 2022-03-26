@@ -10,3 +10,4 @@
 
 # Do not change this unless you know what you are doing 
 module_id: <MODULE ID>
+TEMPLATE_log_deletion: 14
