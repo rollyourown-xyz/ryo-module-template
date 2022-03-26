@@ -17,6 +17,7 @@
   roles:
     - role: upgrade-container
     - role: install-iptables
+    - role: install-rsyslog
     - role: install-consul
     - role: set-up-firewall
     - role: set-up-consul
