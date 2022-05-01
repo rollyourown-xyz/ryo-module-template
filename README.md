@@ -3,7 +3,7 @@ SPDX-FileCopyrightText: 2022 Wilfred Nicoll <xyzroller@rollyourown.xyz>
 SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 
-# Rollyourown Module Template
+# rollyourown Module Template
 
 This is the template repository structure for a rollyourown module.
 
