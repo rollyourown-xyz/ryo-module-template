@@ -3,15 +3,22 @@ SPDX-FileCopyrightText: 2022 Wilfred Nicoll <xyzroller@rollyourown.xyz>
 SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 
-# ryo-module-template
+# Rollyourown Module Template
 
 This is the template repository structure for a rollyourown module.
 
 ---
 
-The general architecture of rollyourown.xyz projects and modules is documented [here](https://rollyourown.xyz/collaborate/project_and_module_development/general_architecture/)
+The general architecture of rollyourown projects and modules is documented [here](https://rollyourown.xyz/collaborate/project_and_module_development/general_architecture/)
 
-The structure of a rollyourown.xyz module (which this template provides) is documented [here](https://rollyourown.xyz/collaborate/project_and_module_development/module_structure/).
+The structure of a rollyourown module (which this template provides) is documented [here](https://rollyourown.xyz/collaborate/project_and_module_development/module_structure/).
+
+## Contributing to this Template
+
+Issues for this module template can be submitted on [Codeberg](https://codeberg.org/) (_preferred_) or [GitHub](https://github.com/):
+
+- Issues on Codeberg: [here](https://codeberg.org/rollyourown-xyz/ryo-module-template/issues)
+- Issues on GitHub: [here](https://github.com/rollyourown-xyz/ryo-module-template/issues)
 
 ## How to Use this Template
 
@@ -28,19 +35,19 @@ This template README can be used for the new module by deleting this part, chang
 
 ---
 
-This is a [rollyourown.xyz module](https://rollyourown.xyz/rollyourown/project_modules/) to deploy <MODULE_PURPOSE> using Ansible, Packer and Terraform.
+This is a [rollyourown module](https://rollyourown.xyz/rollyourown/project_modules/) to deploy <MODULE_PURPOSE> using Ansible, Packer and Terraform.
 
 ## Module Summary
 
-This module uses [Ansible](https://www.ansible.com/), [Packer](https://www.packer.io/) and [Terraform](https://www.terraform.io/) to deploy ...,  as a module for other [rollyourown.xyz projects](https://rollyourown.xyz/rollyourown/projects/).
+This module uses [Ansible](https://www.ansible.com/), [Packer](https://www.packer.io/) and [Terraform](https://www.terraform.io/) to deploy ...,  as a module for other [rollyourown projects](https://rollyourown.xyz/rollyourown/projects/).
 
 _A short summary of the purpose of the module._
 
 ## How to Use
 
-A rollyourown module contains automation code to configure, build, deploy, maintain, back up and restore a module for use by other rollyourown.xyz projects.
+A rollyourown module contains automation code to configure, build, deploy, maintain, back up and restore a module for use by other rollyourown projects.
 
-In itself, a module doesn’t provide a full end-to-end service, but rather provides a reusable building block that is used in a full rollyourown.xyz project as part of the end-to-end solution for that project.
+In itself, a module doesn’t provide a full end-to-end service, but rather provides a reusable building block that is used in a full rollyourown project as part of the end-to-end solution for that project.
 
 A detailed description for project developers of how to use this module in a project can be found in the [module's documentation](https://rollyourown.xyz/rollyourown/project_modules/<MODULE_NAME>/).
 
@@ -55,10 +62,10 @@ We would be delighted if you would like to contribute to rollyourown and there a
 You may also like to contribute to the wider rollyourown project by, for example:
 
 - [Contributing a new project or module](https://rollyourown.xyz/collaborate/new_projects_and_modules/)
-- [Contributing to the rollyourown.xyz website content](https://rollyourown.xyz/collaborate/website_content/) or [design](https://rollyourown.xyz/collaborate/website_design/)
-- [Maintaining a rollyourown.xyz repository](https://rollyourown.xyz/collaborate/working_with_git/what_is_git/#project-maintainer)
+- [Contributing to the rollyourown website content](https://rollyourown.xyz/collaborate/website_content/) or [design](https://rollyourown.xyz/collaborate/website_design/)
+- [Maintaining a rollyourown repository](https://rollyourown.xyz/collaborate/working_with_git/what_is_git/#project-maintainer)
 
-Issues for this project can be submitted on [Codeberg](https://codeberg.org/) (_preferred_) or [GitHub](https://github.com/):
+Issues for this module can be submitted on [Codeberg](https://codeberg.org/) (_preferred_) or [GitHub](https://github.com/):
 
 - Issues on Codeberg: [here](https://codeberg.org/rollyourown-xyz/<MODULE_NAME>/issues)
 - Issues on GitHub: [here](https://github.com/rollyourown-xyz/<MODULE_NAME>/issues)
@@ -69,7 +76,7 @@ If you have found a security vulnerability in any rollyourown service or any of 
 
 ## Repository Links
 
-For public contributions, we maintain mirror repositories of this project on [Codeberg](https://codeberg.org) and [GitHub](https://github.com):
+For public contributions, we maintain mirror repositories of this module on [Codeberg](https://codeberg.org) and [GitHub](https://github.com):
 
 - [https://codeberg.org/rollyourown-xyz/<MODULE_NAME>](https://codeberg.org/rollyourown-xyz/<MODULE_NAME>)
 - [https://github.com/rollyourown-xyz/<MODULE_NAME>](https://github.com/rollyourown-xyz/<MODULE_NAME>)
@@ -78,7 +85,7 @@ Our preferred collaboration space is Codeberg:
 
 <a href="https://codeberg.org/rollyourown-xyz/<MODULE_NAME>"><img alt="Get it on Codeberg" src="https://get-it-on.codeberg.org/get-it-on-blue-on-white.png" height="60"></a>
 
-The primary repository for this project is hosted on our own Git repository server at:
+The primary repository for this module is hosted on our own Git repository server at:
 
 - [https://git.rollyourown.xyz/ryo-projects/<MODULE_NAME>](https://git.rollyourown.xyz/ryo-projects/<MODULE_NAME>)
 
